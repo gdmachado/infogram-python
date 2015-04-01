@@ -4,7 +4,7 @@ readme  = open('README.rst').read()
 history = open('CHANGELOG.md').read()
 
 setup(
-    name = 'infogram-python',
+    name = 'infogram',
     version = '0.1.0',
     description = 'Unofficial Python library for infogr.am API',
     author = 'Gustavo Machado',
