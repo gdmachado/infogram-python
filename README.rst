@@ -21,3 +21,32 @@ Usage
     client = Infogram(api_key, api_secret)
 
     client.themes_list()
+
+API Methods
+------------
+
+Themes
+-----
+
+::
+
+    client.themes_list()
+
+Infographics
+-----
+
+::
+
+    client.infographics_list()
+    client.infographics_get(infographic_id)
+    client.infographics_create(params)
+    client.infographics_update(infographic_id, params)
+    client.infographics_destroy(infographic_id)
+
+Users
+-----
+
+::
+
+    client.users_get(user_id)
+    client.users_get_infographics(user_id)
