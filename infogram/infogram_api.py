@@ -120,7 +120,7 @@ class Infogram(object):
                 path   = '/themes',
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not get themes')
             raise
         else:
@@ -133,7 +133,7 @@ class Infogram(object):
                 path   = '/users/{}'.format(user_id),
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not get user {}'.format(user_id))
             raise
         else:
@@ -146,7 +146,7 @@ class Infogram(object):
                 path   = '/users/{}/infographics'.format(user_id),
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not get infographics for user {}'.format(user_id))
             raise
         else:
@@ -159,7 +159,7 @@ class Infogram(object):
                 path   = '/infographics',
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not get infographics')
             raise
         else:
@@ -173,7 +173,7 @@ class Infogram(object):
                 params = {'format': format} if format else None,
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not get infographic {}'.format(infographic_id))
             raise
         else:
@@ -187,7 +187,7 @@ class Infogram(object):
                 params = params,
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not create infographic')
             raise
         else:
@@ -201,7 +201,7 @@ class Infogram(object):
                 params = params,
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not update infographic {}'.format(infographic_id))
             raise
         else:
@@ -214,7 +214,7 @@ class Infogram(object):
                 path   = '/infographics/{}'.format(infographic_id),
                 retry  = retry
             )
-        except InfogramError as e:
+        except InfogramPythonError as e:
             self._extend_exception(e, 'Could not delete infographic {}'.format(infographic_id))
             raise
         else:
