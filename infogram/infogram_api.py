@@ -21,7 +21,7 @@ class Infogram(object):
         self.api_secret = api_secret
         self.timeout    = timeout
 
-    def _extend_exception(exception, message):
+    def _extend_exception(self, exception, message):
         if not exception.args:
             exception.args = ('',)
         exception.args = (message + ': ' + exception.args[0],) + exception.args[1:]
