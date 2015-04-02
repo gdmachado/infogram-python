@@ -100,7 +100,7 @@ class Infogram(object):
 
     def _parse(self, response):
         if response.status_code not in [200, 201]:
-            raise HTTPError((response.reason, response.content), response.status_code)
+            raise HTTPError(response.reason, response.status_code, response.content)
 
         data = response.content
         if data:
