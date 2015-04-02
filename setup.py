@@ -5,7 +5,7 @@ history = open('CHANGELOG.md').read()
 
 setup(
     name = 'infogram',
-    version = '0.1.0',
+    version = '0.1.1',
     description = 'Unofficial Python library for infogr.am API',
     author = 'Gustavo Machado',
     author_email = 'gdmachado@me.com',

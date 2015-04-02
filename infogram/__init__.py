@@ -30,7 +30,7 @@ from infogram.exceptions import (
 )
 from infogram.infogram_api import Infogram
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     'InfogramPythonError',
